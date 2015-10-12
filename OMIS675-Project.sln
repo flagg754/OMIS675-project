@@ -3,26 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "OMIS675-Project", "http://localhost:58596", "{FA9ED87B-FD7A-4B7D-8F9A-2095CE99084C}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "OMIS675-Project(1)", "http://localhost:65162", "{B752EDB8-D5AC-4918-ADB6-E41A568F99B4}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_58596"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\OMIS675-Project\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58596\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65162"
+		Debug.AspNetCompiler.PhysicalPath = "..\OMIS675-Project\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65162\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_58596"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\OMIS675-Project\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58596\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65162"
+		Release.AspNetCompiler.PhysicalPath = "..\OMIS675-Project\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65162\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\..\WebSites\OMIS675-Project\"
-		DefaultWebSiteLanguage = "Visual C#"
+		SlnRelativePath = "..\OMIS675-Project\"
 	EndProjectSection
 EndProject
 Global
@@ -30,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA9ED87B-FD7A-4B7D-8F9A-2095CE99084C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA9ED87B-FD7A-4B7D-8F9A-2095CE99084C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B752EDB8-D5AC-4918-ADB6-E41A568F99B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B752EDB8-D5AC-4918-ADB6-E41A568F99B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
