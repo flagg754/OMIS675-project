@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <h2>Web App Login Page</h2>
         <p>Username:<br />
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" Width="209px"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server"  Width="209px"></asp:TextBox>
 &nbsp;
             <br />
             <br />
