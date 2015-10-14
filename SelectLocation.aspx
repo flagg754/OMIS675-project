@@ -7,52 +7,38 @@
     <title></title>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
-    //var x = document.getElementById("demo");
-    var browserSupportFlag = new Boolean();
-    var initialLocation;
-    var siberia = new google.maps.LatLng(60, 105);
-    var newyork = new google.maps.LatLng(40.69847032728747, -73.9514422416687);
-
+    var myLocation;
+    var map;
 
-function initialize() {
-  
-  if (navigator.geolocation) {
-      browserSupportFlag = true;
-      navigator.geolocation.getCurrentPosition(function(position) {
-          intialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-          //map.setCenter(initialLocation); 
-      }, function () {
-          handleNoGeolocation(browserSupportFlag);
-      });
-  }
-  else {
-      browserSupportFlag = false;
-      handleNoGeolocation(browserSupportFlag);
-  }
+   function initialize() {
+       var mapProp = {
+           center: { lat: 51.508742, lng: -0.120850 },
+           zoom: 5,
+           mapTypeId: google.maps.MapTypeId.ROADMAP
+       };
+       map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+   }
+   function getLocation() {
+     
+       if (navigator.geolocation) {
+           navigator.geolocation.getCurrentPosition(function(position) {
+               alert("4");
+               myLocation = new google.map.LatLng(position.coords.latitude, position.coords.longitude);
+               alert("5");
+               map.setCenter(myLocation);
+               alert("6");
+           },alert("Geolocation error"));
+         
+       } else {
+           alert("Geolocation is not supported by your browser");
+       }
+   }
 
-  function handleNoGeolocation(errorFlag) {
-      if (errorFlag == true) {
-          alert("Geolocation service failed.");
-          initialLocation = newyork;
-      } else {
-          alert("Your browser doesn't support geolocation. We've placed you in Siberia.");
-          initialLocation = siberia;
-      }
-    //map.setCenter(initialLocation);
-  }
-
-  var mapProp = {
-      center: initialLocation,
-      zoom: 5,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
+   
 
 
-google.maps.event.addDomListener(window, 'load', initialize);
+   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -60,6 +46,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     
     </div>
     <div id="googleMap" style="width:500px;height:380px;"></div>
+        <asp:Button ID="Button1" Height="45px" Text="Use My Location" Width="499px" OnClientClick="getLocation();" runat="server" />
     </form>
 </body>
 </html>
