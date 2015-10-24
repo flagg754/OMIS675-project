@@ -46,7 +46,9 @@
     
     </div>
     <div id="googleMap" style="width:500px;height:380px;"></div>
-        <asp:Button ID="Button1" Height="45px" Text="Use My Location" Width="499px" OnClientClick="getLocation();" runat="server" />
+        <asp:Button ID="Button1" Height="45px" Text="Get My Location" Width="500px" OnClientClick="getLocation();" runat="server" />
+        <br />
+        <asp:Button ID="Button2" runat="server" Height="45px" style="margin-top: 33px" Text="Use This Location" Width="500px" />
     </form>
 </body>
 </html>
